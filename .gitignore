@@ -1,0 +1,42 @@
+# ---- secrets & local state (never commit) ----
+.env
+.env.*
+!.env.example
+*.key
+id_rsa*
+id_ed25519*
+*.pem
+*.jceks
+*.keystore
+*.pfx
+*.p12
+*.kdbx
+secret_key
+*_creds*
+*credentials*
+*.sqlite
+*.sqlite3
+_nextsteps*
+*secret*.txt
+
+# ---- regenerable ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+# single-file build (python tools/bundle.py)
+dist/
+# three.js download cache for the bundle
+vendor/
+# verification screenshots from tools/shoot.py
+shots/
+
+# ---- local tooling / OS ----
+.claude/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.idea/
+.vscode/
